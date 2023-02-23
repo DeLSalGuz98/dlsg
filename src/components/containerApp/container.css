@@ -1,0 +1,8 @@
+.subcontainer{
+    width: 90%;
+    height: 90%;
+    background-color: var(--transparet-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--main-color);
+    padding: 1em;
+}

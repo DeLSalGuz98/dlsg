@@ -28,7 +28,28 @@
     bottom: 0;
     transition: bottom .5s;
 }
+ion-icon{
+    font-size: 1em;
+    width: 100%;
+    border-radius: 50px;
+    padding: 6px 0;
+}
 .navItem:focus{
+    width: 2em;
+    height: 2em;
+    position: relative;
+    bottom: 1em;
+    box-shadow: inset 5px 0 10px var(--black), inset -2px 0 10px var(--white), 0 10px 10px var(--black);
+}
+.navItemSelected{
+    background-color: var(--second-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: var(--main-color);
+    border-radius: 50%;
+    box-shadow: inset -2px 0 10px var(--black), inset 2px 0 10px var(--white);
     width: 2em;
     height: 2em;
     position: relative;
@@ -52,4 +73,11 @@
         bottom: 0;
         box-shadow: inset 5px 0 10px var(--black), inset -2px 0 10px var(--white), -10px 0 10px var(--black);
     }
+    .navItemSelected{
+        font-size: 2em;
+        transition: left .5s;
+        left: 1em;
+        bottom: 0;
+        box-shadow: inset 5px 0 10px var(--black), inset -2px 0 10px var(--white), -10px 0 10px var(--black);
+    }   
 }

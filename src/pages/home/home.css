@@ -30,6 +30,8 @@
     text-align: justify;
 }
 .bigBtn{
+    text-decoration: none;
+    display: inline-block;
     background-color: var(--main-color);
     color: var(--second-color);
     border: none;

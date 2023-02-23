@@ -1,5 +1,6 @@
 import './home.css'
 import { Container } from "../../components/containerApp/container"
+import { Link } from 'react-router-dom'
 export function Home(){
     return(
         <Container>
@@ -16,7 +17,8 @@ export function Home(){
                     <p className='text'>
                     Algunos de mis objetivos actuales son mejorar mis habilidades de programación, aprender a gestionar proyectos.
                     </p>
-                    <input className='bigBtn' type="button" value="Mis Proyectos" />
+                    <Link className='bigBtn' to={"/projects"}>Mis Proyectos</Link>
+                    {/* <input className='bigBtn' type="button" value="Mis Proyectos" /> */}
                 </div>
                 <img className='dlsg' src="/public/img/dlsg.jpg" alt="me" />
             </div>

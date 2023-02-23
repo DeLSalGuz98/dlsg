@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import { Home } from './pages/home/home'
 import { Habilities } from './pages/habilities/habilities'
+import { Projects } from './pages/projects/projects'
 import { ErrorPage } from './pages/error/errorPage'
 import './index.css'
 import {
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/projects",
-        element: <Habilities/>,
+        element: <Projects/>,
       },
       {
         path: "/education",

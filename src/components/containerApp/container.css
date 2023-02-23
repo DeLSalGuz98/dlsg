@@ -1,8 +1,14 @@
 .subcontainer{
     width: 90%;
+    max-height: 30em;
     height: 90%;
     background-color: var(--transparet-color);
     border-radius: 10px;
     box-shadow: 0 0 10px var(--main-color);
     padding: 1em;
+}
+@media (min-width: 1024px) {
+    .subcontainer{
+        max-height: 90%;
+    }
 }

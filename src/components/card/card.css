@@ -1,11 +1,14 @@
 .cardContainer{
     font-size: 1rem;
-    width: fit-content;
+    width: 20em;
+    height: 12em;
     position: relative;
+    margin-bottom: 1em;
 }
 .cardImage{
     width: 20em;
     height: 12em;
+    border-radius: 5px;
 }
 .cardDescription{
     opacity: 0;
@@ -35,8 +38,16 @@
     border-radius: 5px;
 }
 @media (min-width: 1024px) {
-    .cardContainerFocus{
-        box-shadow: 0 0 5px var(--main-color);
+    .cardContainer{
+        width: 11em;
+        height: 7em;
+        margin-bottom: 0;
+    }
+    .cardShadow:hover{
+        width: fit-content;
+        height: fit-content;
+        cursor: pointer;
+        box-shadow: 0 0 10px var(--main-color);
     }
     .cardImage{
         width: 11em;

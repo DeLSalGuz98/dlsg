@@ -1,6 +1,7 @@
 import './projects.css'
 import { Container } from '../../components/containerApp/container'
 import { Card } from '../../components/card/card'
+import { useState } from 'react'
 const projects = [
     {
         id:"1",
@@ -33,6 +34,20 @@ const projects = [
 ]
 
 export function Projects() {
+    const [projectSelected, setProjectSelected] = useState({
+        name: "Aplicacion Web - Tienda Online",
+        img: "store.png",
+        tools:['React JS', 'Node JS', 'CSS', 'MySQL'],
+        github: 'https://github.com/DeLSalGuz98/store-project' 
+    });
+    const handlerClick = (project)=>{
+        setProjectSelected({...projectSelected, 
+            name: project.name,
+            img: project.img,
+            tools: project.tools,
+            github: project.github
+        })
+    }
     return(
         <Container>
             <div className='projectContainer'>
@@ -42,15 +57,36 @@ export function Projects() {
                     {
                         projects.map(p=>{
                             return(
-                                <Card
-                                    key={p.id}
+                                <div className='cardShadow' key={p.id} onClick={()=>{handlerClick(p)}}>
+                                    <Card
                                     project={p.name}
                                     image={p.img}
-                                    github={p.github}
-                                />
+                                    >
+                                        <div className="cardDescription">
+                                            <span className='cardTitle'>{p.name}</span>
+                                            <a className="cardBtn" target={'_blank'} href={p.github}>Ver Github</a>
+                                        </div>
+                                    </Card>
+                                </div>
                             )
                         })
                     }
+                </div>
+                <div className='maxPreviewProject'>
+                    <img className='previewImg' src={`/public/img/projects/${projectSelected.img}`} alt={projectSelected.name} />
+                    <div className='previewInformation'>
+                        <span className='previewTitle'>{projectSelected.name}</span>
+                        <ul className='previewList'>
+                            {
+                                projectSelected.tools.map(t=>{
+                                    return(
+                                        <li key={t}>{t}</li>
+                                    )
+                                })
+                            }
+                        </ul>
+                        <a className='previewBtn' target={'_blank'} href={projectSelected.github}>Ver Github</a>
+                    </div>
                 </div>
             </div>
         </Container>

@@ -1,0 +1,105 @@
+.fileContainer{
+    width: 100%;
+    height: 90%;
+    font-size: 1rem;
+    display: grid;
+    place-items: center;
+}
+.fileRotate{
+    width: 100%;
+    height: 7em;
+    position: relative;
+    transform-style: preserve-3d;
+    display: grid;
+    place-items: center;
+    transform-origin: center;
+    transform: rotateY(0);
+    animation: carousel 50s infinite linear;
+}
+.fileItem{
+    position: absolute;
+    width: 10em;
+    height: 100%;
+    box-shadow: 0 5px 20px var(--main-color);
+}
+.fileImage{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+.fileItem:nth-child(1) {
+    transform: rotateY(0) translateZ(8em);
+}
+.fileItem:nth-child(2) {
+    transform: rotateY(72deg) translateZ(8em);
+}
+.fileItem:nth-child(3) {
+    transform: rotateY(144deg) translateZ(8rem);
+}
+.fileItem:nth-child(4) {
+    transform: rotateY(216deg) translateZ(8rem);
+}
+.fileItem:nth-child(5) {
+    transform: rotateY(288deg) translateZ(8rem);
+}
+.fileItem:nth-child(6) {
+    transform: rotateY(360deg) translateZ(8rem);
+}
+@keyframes carousel {
+    0%{ transform: translateZ(-8em) rotateY(0); }
+    100% { transform: translateZ(-8em) rotateY(-360deg); }
+}
+@media (min-width: 500px){
+    .fileRotate{
+        height: 10em;
+    }
+    .fileItem{
+        position: absolute;
+        width: 15em;
+    }
+    .fileItem:nth-child(1) {
+        transform: rotateY(0) translateZ(11em);
+    }
+    .fileItem:nth-child(2) {
+        transform: rotateY(72deg) translateZ(11em);
+    }
+    .fileItem:nth-child(3) {
+        transform: rotateY(144deg) translateZ(11em);
+    }
+    .fileItem:nth-child(4) {
+        transform: rotateY(216deg) translateZ(11em);
+    }
+    .fileItem:nth-child(5) {
+        transform: rotateY(288deg) translateZ(11em);
+    }
+    .fileItem:nth-child(6) {
+        transform: rotateY(360deg) translateZ(11em);
+    }
+}
+@media (min-width: 1024px){
+    .fileRotate{
+        height: 18em;
+    }
+    .fileItem{
+        position: absolute;
+        width: 25em;
+    }
+    .fileItem:nth-child(1) {
+        transform: rotateY(0) translateZ(19em);
+    }
+    .fileItem:nth-child(2) {
+        transform: rotateY(72deg) translateZ(19em);
+    }
+    .fileItem:nth-child(3) {
+        transform: rotateY(144deg) translateZ(19em);
+    }
+    .fileItem:nth-child(4) {
+        transform: rotateY(216deg) translateZ(19em);
+    }
+    .fileItem:nth-child(5) {
+        transform: rotateY(288deg) translateZ(19em);
+    }
+    .fileItem:nth-child(6) {
+        transform: rotateY(360deg) translateZ(19em);
+    }
+}

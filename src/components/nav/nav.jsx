@@ -11,16 +11,18 @@ export function Nav(){
         contact: "navItem",
     }
     const [classValue, setClassValue] = useState(pages);
+    const [changeLink, setChangeLink] = useState(false)
     useEffect(()=>{
         if(url == ""){
             setClassValue({...classValue, "home":"navItemSelected"})
         }else{
             setClassValue({...classValue, [url]:"navItemSelected"})
         }
-    },[]);
-    const handlerClick = (e)=>{
-        //e.preventDefault();
+        setChangeLink(false)
+    },[changeLink]);
+    const handlerClick = ()=>{
         setClassValue(pages);
+        setChangeLink(true)
     }
     return(
         <nav>

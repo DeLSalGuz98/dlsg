@@ -4,6 +4,8 @@ import App from './App'
 import { Home } from './pages/home/home'
 import { Habilities } from './pages/habilities/habilities'
 import { Projects } from './pages/projects/projects'
+import { Education } from './pages/education/education'
+import { Contact } from './pages/contact/constact'
 import { ErrorPage } from './pages/error/errorPage'
 import './index.css'
 import {
@@ -31,11 +33,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/education",
-        element: <Habilities/>,
+        element: <Education/>,
       },
       {
         path: "/contact",
-        element: <Habilities/>,
+        element: <Contact/>,
       },
     ],
   },

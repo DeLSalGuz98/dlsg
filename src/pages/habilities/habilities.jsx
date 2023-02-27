@@ -1,5 +1,11 @@
 import { Container } from '../../components/containerApp/container'
 import './habilities.css'
+import html from '../../assets/img/html.png'
+import css from '../../assets/img/css.png'
+import js from '../../assets/img/js.png'
+import react from '../../assets/img/react.png'
+import mysql from '../../assets/img/mysql.png'
+import node from '../../assets/img/node.png'
 export function Habilities(){
     return(
         <Container>
@@ -8,10 +14,10 @@ export function Habilities(){
                     <h3>Herramientas</h3>
                     <hr className='line'/>
                     <div className='containerTools'>
-                        <img loading='lazy' className='imgTools' src="/src/assets/img/html.png" alt="html" />
-                        <img loading='lazy' className='imgTools' src="/src/assets/img/css.png" alt="css" />
-                        <img loading='lazy' className='imgTools' src="/src/assets/img/js.png" alt="js" />
-                        <img loading='lazy' className='imgTools' src="/src/assets/img/react.png" alt="react" />
+                        <img loading='lazy' className='imgTools' src={html} alt="html" />
+                        <img loading='lazy' className='imgTools' src={css}  alt="css" />
+                        <img loading='lazy' className='imgTools' src={js}  alt="js" />
+                        <img loading='lazy' className='imgTools' src={react}  alt="react" />
                     </div>
                 </div>
                 <div className='habilitiesSubcontainer'>
@@ -27,8 +33,8 @@ export function Habilities(){
                     <h3>Herramientas en proceso de Aprendizaje</h3>
                     <hr className='line'/>
                     <div className='containerTools'>
-                        <img loading='lazy' className='imgTools' src="/src/assets/img/mysql.png" alt="mysql" />
-                        <img loading='lazy' className='imgTools' src="/src/assets/img/node.png" alt="nodejs" />
+                        <img loading='lazy' className='imgTools' src={mysql} alt="mysql" />
+                        <img loading='lazy' className='imgTools' src={node} alt="nodejs" />
                     </div>
                 </div>
             </div>

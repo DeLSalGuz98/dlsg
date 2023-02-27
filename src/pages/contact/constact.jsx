@@ -1,5 +1,6 @@
 import './constact.css'
 import { Container } from '../../components/containerApp/container'
+import deco from '../../assets/img/deco.svg'
 
 export function Contact() {
     return(
@@ -14,7 +15,7 @@ export function Contact() {
                 </ul>
             </div>
             <div className='svgContainer'>
-                <img className='svgImage' src="/src/assets/img/deco.svg" alt="image-decoration" />
+                <img className='svgImage' src={deco} alt="image-decoration" />
             </div>
         </Container>
     )

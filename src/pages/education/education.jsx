@@ -1,35 +1,41 @@
 import './education.css'
 import { Container } from '../../components/containerApp/container'
+import javascript from '../../assets/img/education/javascript.png'
+import frontend from '../../assets/img/education/frontend.png'
+import poo from '../../assets/img/education/poo.png'
+import react from '../../assets/img/education/react.png'
+import form from '../../assets/img/education/form.png'
+import mysql from '../../assets/img/education/mysql.png'
 
 const files = [
     {
         id:"1",
-        image: "javascript.png",
+        image: javascript,
         name:"file-js"
     },
     {
         id:"2",
-        image: "frontend.png",
+        image: frontend,
         name:"file-forntend"
     },
     {
         id:"3",
-        image: "poo.png",
+        image: poo,
         name:"file-poo"
     },
     {
         id:"4",
-        image: "react.png",
+        image: react,
         name:"file-react"
     },
     {
         id:"5",
-        image: "form.png",
+        image: form,
         name:"file-form"
     },
     {
         id:"6",
-        image: "mysql.png",
+        image: mysql,
         name:"file-mysql"
     },
 ] 
@@ -45,7 +51,7 @@ export function Education() {
                         files.map(f =>{
                             return(
                                 <div className="fileItem" key={f.id}>
-                                    <img loading='lazy' className='fileImage' src={`/src/assets//img/education/${f.image}`} alt={f.name} />
+                                    <img loading='lazy' className='fileImage' src={f.image} alt={f.name} />
                                 </div>
                             )
                         })

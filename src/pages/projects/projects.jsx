@@ -2,32 +2,36 @@ import './projects.css'
 import { Container } from '../../components/containerApp/container'
 import { Card } from '../../components/card/card'
 import { useState } from 'react'
+import store from '../../assets/img/projects/store.png'
+import weather from '../../assets/img/projects/weather-app.png'
+import school from '../../assets/img/projects/school.png'
+import clone from '../../assets/img/projects/web-clone.png'
 const projects = [
     {
         id:"1",
         name: "Aplicacion Web - Tienda Online",
-        img: "store.png",
+        img: store,
         tools:['React JS', 'Node JS', 'CSS', 'MySQL'],
         github: 'https://github.com/DeLSalGuz98/store-project' 
     },
     {
         id:"2",
         name: "Aplicacion Web del Clima",
-        img: "weather-app.png",
+        img: weather,
         tools:['React JS', 'Node JS', 'CSS', 'Webpack'],
         github: 'https://github.com/DeLSalGuz98/WeatherApp-devchallenges.io-' 
     },
     {
         id:"3",
         name: "Aplicacion Web - Escuela Online",
-        img: "school.png",
+        img: school,
         tools:['HTML', 'CSS', 'JavaScript', 'JSON server'],
         github: 'https://github.com/DeLSalGuz98/school-app' 
     },
     {
         id:"4",
         name: "SPA - Copia de la pagina Dota 2",
-        img: "web-clone.png",
+        img: clone,
         tools:['HTML', 'CSS'],
         github: 'https://github.com/DeLSalGuz98/page-clone' 
     },
@@ -36,7 +40,7 @@ const projects = [
 export function Projects() {
     const [projectSelected, setProjectSelected] = useState({
         name: "Aplicacion Web - Tienda Online",
-        img: "store.png",
+        img: store,
         tools:['React JS', 'Node JS', 'CSS', 'MySQL'],
         github: 'https://github.com/DeLSalGuz98/store-project' 
     });
@@ -73,7 +77,7 @@ export function Projects() {
                     }
                 </div>
                 <div className='maxPreviewProject'>
-                    <img loading='lazy' className='previewImg' src={`/src/assets/img/projects/${projectSelected.img}`} alt={projectSelected.name} />
+                    <img loading='lazy' className='previewImg' src={projectSelected.img} alt={projectSelected.name} />
                     <div className='previewInformation'>
                         <span className='previewTitle'>{projectSelected.name}</span>
                         <ul className='previewList'>

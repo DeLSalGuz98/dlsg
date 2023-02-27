@@ -30,7 +30,7 @@ export function Home(){
                     {/* <Link className='bigBtn' to={"/projects"}>Mis Proyectos</Link> */}
                     <input className='bigBtn' type="button" value="Mis Proyectos" onClick={handlerClick}/>
                 </div>
-                <img loading='lazy' className='dlsg' src="/public/img/dlsg.png" alt="denilson" />
+                <img loading='lazy' className='dlsg' src="img/dlsg.png" alt="denilson" />
             </div>
         </Container>
     )

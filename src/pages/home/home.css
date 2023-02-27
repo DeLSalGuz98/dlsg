@@ -20,6 +20,7 @@
 .dlsg{
     border-radius: 10px;
     width: 60%;
+    max-width: 12em;
     margin: 0 auto;
 }
 .text{
@@ -54,6 +55,9 @@
     .dlsg{
         margin: auto;
         width: 90%;
+        max-width: 25em;
+        transform: rotateY(180deg);
+        box-shadow: 10px 10px 10px var(--black);
     }
     .text{
         font-size: 1.2em;

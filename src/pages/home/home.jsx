@@ -1,7 +1,17 @@
 import './home.css'
 import { Container } from "../../components/containerApp/container"
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import { onProjectContext } from '../../context/onProject';
+import { useContext } from 'react';
 export function Home(){
+    //set in true for update the nav component
+    const {setIsTrue} = useContext(onProjectContext);
+    //call hook navigate to redirect projects page
+    const navigate = useNavigate();
+    const handlerClick = ()=>{
+        navigate('/projects');
+        setIsTrue(true);
+    }
     return(
         <Container>
             <div className='cols-2'>
@@ -17,10 +27,10 @@ export function Home(){
                     <p className='text'>
                     Algunos de mis objetivos actuales son mejorar mis habilidades de programación, aprender a gestionar proyectos.
                     </p>
-                    <Link className='bigBtn' to={"/projects"}>Mis Proyectos</Link>
-                    {/* <input className='bigBtn' type="button" value="Mis Proyectos" /> */}
+                    {/* <Link className='bigBtn' to={"/projects"}>Mis Proyectos</Link> */}
+                    <input className='bigBtn' type="button" value="Mis Proyectos" onClick={handlerClick}/>
                 </div>
-                <img className='dlsg' src="/public/img/dlsg.jpg" alt="me" />
+                <img loading='lazy' className='dlsg' src="/public/img/dlsg.png" alt="denilson" />
             </div>
         </Container>
     )

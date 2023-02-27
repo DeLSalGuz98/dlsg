@@ -6,9 +6,26 @@
     border-radius: 10px;
     box-shadow: 0 0 10px var(--main-color);
     padding: 1.5em 2em;
+    animation: appear .5s;
 }
 @media (min-width: 1024px) {
     .subcontainer{
         max-height: 90%;
+    }
+}
+@keyframes appear{
+    0%{
+        
+        opacity: 0;
+    }
+    50%{
+        width: 10%;
+        height: 10%;
+        opacity: 0;
+    }
+    100%{
+        width: 90%;
+        height: 90%;
+        opacity: 100%;
     }
 }

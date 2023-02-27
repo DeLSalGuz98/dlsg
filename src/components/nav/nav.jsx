@@ -1,7 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './nav.css'
+import { onProjectContext } from '../../context/onProject';
 export function Nav(){
+    const {isTrue, setIsTrue} = useContext(onProjectContext);
     let url = location.pathname.split('/')[1];
     const pages = {
         home: "navItem",
@@ -11,15 +13,19 @@ export function Nav(){
         contact: "navItem",
     }
     const [classValue, setClassValue] = useState(pages);
-    const [changeLink, setChangeLink] = useState(false)
+    const [changeLink, setChangeLink] = useState(false);
     useEffect(()=>{
         if(url == ""){
             setClassValue({...classValue, "home":"navItemSelected"})
         }else{
             setClassValue({...classValue, [url]:"navItemSelected"})
         }
+        if(isTrue){
+            setClassValue(pages);
+        }
         setChangeLink(false)
-    },[changeLink]);
+        setIsTrue(false)
+    },[changeLink, isTrue]);
     const handlerClick = ()=>{
         setClassValue(pages);
         setChangeLink(true)

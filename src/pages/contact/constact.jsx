@@ -8,7 +8,7 @@ export function Contact() {
             <hr className="line" />
             <div className='contactContainer'>
                 <ul>
-                    <li><span className='contactIcon'><ion-icon name="logo-linkedin"></ion-icon></span><a className='contactText' target={'_blank'} href="https://www.linkedin.com/in/denilson-luciano-salas-guzm%C3%A1n-a25532229/">linkedin.com/denilson</a></li>
+                    <li><span className='contactIcon'><ion-icon name="logo-linkedin"></ion-icon></span><a className='contactText' target={'_blank'} href="https://www.linkedin.com/in/denilson-sg/">linkedin.com/in/denilson-sg/</a></li>
                     <li><span className='contactIcon'><ion-icon name="logo-github"></ion-icon></span><a className='contactText' target={'_blank'} href="https://github.com/DeLSalGuz98?tab=repositories">github.com/DeLSalGuz98</a></li>
                     <li><span className='contactIcon'><ion-icon name="mail-outline"></ion-icon></span><span className='contactMail'>@</span></li>
                 </ul>

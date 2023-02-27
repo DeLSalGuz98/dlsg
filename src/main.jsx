@@ -12,6 +12,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import { OnProjectContextProvider } from './context/onProject'
 
 const router = createBrowserRouter([
   {
@@ -44,5 +45,7 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+  <OnProjectContextProvider>
     <RouterProvider router={router} />,
+  </OnProjectContextProvider>
 )

@@ -45,7 +45,7 @@ export function Education() {
                         files.map(f =>{
                             return(
                                 <div className="fileItem" key={f.id}>
-                                    <img loading='lazy' className='fileImage' src={`/public/img/education/${f.image}`} alt={f.name} />
+                                    <img loading='lazy' className='fileImage' src={`/src/assets//img/education/${f.image}`} alt={f.name} />
                                 </div>
                             )
                         })

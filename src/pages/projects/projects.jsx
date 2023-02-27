@@ -73,7 +73,7 @@ export function Projects() {
                     }
                 </div>
                 <div className='maxPreviewProject'>
-                    <img loading='lazy' className='previewImg' src={`img/projects/${projectSelected.img}`} alt={projectSelected.name} />
+                    <img loading='lazy' className='previewImg' src={`/src/assets/img/projects/${projectSelected.img}`} alt={projectSelected.name} />
                     <div className='previewInformation'>
                         <span className='previewTitle'>{projectSelected.name}</span>
                         <ul className='previewList'>

@@ -14,7 +14,7 @@ export function Contact() {
                 </ul>
             </div>
             <div className='svgContainer'>
-                <img className='svgImage' src="/public/img/deco.svg" alt="image-decoration" />
+                <img className='svgImage' src="/src/assets/img/deco.svg" alt="image-decoration" />
             </div>
         </Container>
     )

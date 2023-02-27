@@ -3,6 +3,7 @@ import { Container } from "../../components/containerApp/container"
 import { useNavigate } from 'react-router-dom'
 import { onProjectContext } from '../../context/onProject';
 import { useContext } from 'react';
+import dlsg from '../../assets/img/dlsg.png'
 export function Home(){
     //set in true for update the nav component
     const {setIsTrue} = useContext(onProjectContext);
@@ -30,7 +31,7 @@ export function Home(){
                     {/* <Link className='bigBtn' to={"/projects"}>Mis Proyectos</Link> */}
                     <input className='bigBtn' type="button" value="Mis Proyectos" onClick={handlerClick}/>
                 </div>
-                <img loading='lazy' className='dlsg' src="/src/assets/img/dlsg.png" alt="denilson" />
+                <img loading='lazy' className='dlsg' src={dlsg} alt="denilson" />
             </div>
         </Container>
     )

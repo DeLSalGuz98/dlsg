@@ -46,6 +46,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <OnProjectContextProvider>
-    <RouterProvider router={router} />,
+    <RouterProvider router={router} />
   </OnProjectContextProvider>
 )

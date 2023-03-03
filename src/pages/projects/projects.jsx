@@ -2,10 +2,10 @@ import './projects.css'
 import { Container } from '../../components/containerApp/container'
 import { Card } from '../../components/card/card'
 import { useState } from 'react'
-import store from '../../assets/img/projects/store.png'
-import weather from '../../assets/img/projects/weather-app.png'
-import school from '../../assets/img/projects/school.png'
-import clone from '../../assets/img/projects/web-clone.png'
+import store from '../../assets/img/projects/store.jpg'
+import weather from '../../assets/img/projects/weather-app.jpg'
+import school from '../../assets/img/projects/school.jpg'
+import clone from '../../assets/img/projects/web-clone.jpg'
 const projects = [
     {
         id:"1",

@@ -3,7 +3,7 @@ import { Container } from "../../components/containerApp/container"
 import { useNavigate } from 'react-router-dom'
 import { onProjectContext } from '../../context/onProject';
 import { useContext } from 'react';
-import dlsg from '../../assets/img/dlsg.png'
+import dlsg from '../../assets/img/dlsg.jpg'
 export function Home(){
     //set in true for update the nav component
     const {setIsTrue} = useContext(onProjectContext);

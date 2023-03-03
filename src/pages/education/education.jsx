@@ -2,10 +2,10 @@ import './education.css'
 import { Container } from '../../components/containerApp/container'
 import javascript from '../../assets/img/education/javascript.png'
 import frontend from '../../assets/img/education/frontend.png'
-import poo from '../../assets/img/education/poo.png'
-import react from '../../assets/img/education/react.png'
-import form from '../../assets/img/education/form.png'
-import mysql from '../../assets/img/education/mysql.png'
+import poo from '../../assets/img/education/poo.jpg'
+import react from '../../assets/img/education/react.jpg'
+import form from '../../assets/img/education/form.jpg'
+import mysql from '../../assets/img/education/mysql.jpg'
 
 const files = [
     {

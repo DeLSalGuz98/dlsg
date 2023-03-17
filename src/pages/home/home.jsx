@@ -17,10 +17,10 @@ export function Home(){
         <Container>
             <div className='cols-2'>
                 <div className='information'>
-                    <h2 className='title'>Hola, Soy 
+                    <h1 className='title'>Hola, Soy 
                     <br />
                     Denilson
-                    </h2>
+                    </h1>
                     <hr className='line'/>
                     <p className='text'>
                     Terminé la Universidad en enero de 2022, estudie Ingenieria de Sistemas e Informatica y entre todas las cosas que aprendí, lo que más me entusiasmó fue el desarrollo de software.

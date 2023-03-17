@@ -43,7 +43,7 @@ const files = [
 export function Education() {
     return(
         <Container>
-            <h3>Mi Proceso</h3>
+            <h2>Mi Proceso</h2>
             <hr className="line" />
             <div className="fileContainer">
                 <div className="fileRotate">

@@ -11,7 +11,7 @@ export function Habilities(){
         <Container>
             <div className='habilitiesContainer'>
                 <div className='habilitiesSubcontainer'>
-                    <h3>Herramientas</h3>
+                    <h2>Herramientas</h2>
                     <hr className='line'/>
                     <div className='containerTools'>
                         <img loading='lazy' className='imgTools' src={html} alt="html" />
@@ -21,7 +21,7 @@ export function Habilities(){
                     </div>
                 </div>
                 <div className='habilitiesSubcontainer'>
-                    <h3>Habilidades</h3>
+                    <h2>Habilidades</h2>
                     <hr className='line'/>
                     <ul className='habilitiesList'>
                         <li>Autodidacta</li>
@@ -30,7 +30,7 @@ export function Habilities(){
                     </ul>
                 </div>
                 <div className='habilitiesSubcontainer'>
-                    <h3>Herramientas en proceso de Aprendizaje</h3>
+                    <h2>Herramientas en proceso de Aprendizaje</h2>
                     <hr className='line'/>
                     <div className='containerTools'>
                         <img loading='lazy' className='imgTools' src={mysql} alt="mysql" />

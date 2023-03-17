@@ -55,7 +55,7 @@ export function Projects() {
     return(
         <Container>
             <div className='projectContainer'>
-                <h3>Mis Projectos Personales</h3>
+                <h2>Mis Projectos Personales</h2>
                 <hr className='line'/>
                 <div className='projects'>
                     {

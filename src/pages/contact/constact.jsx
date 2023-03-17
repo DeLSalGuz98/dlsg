@@ -5,7 +5,7 @@ import deco from '../../assets/img/deco.svg'
 export function Contact() {
     return(
         <Container>
-            <h3>Mis Redes</h3>
+            <h2>Mis Redes</h2>
             <hr className="line" />
             <div className='contactContainer'>
                 <ul>

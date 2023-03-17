@@ -6,7 +6,7 @@ export function ErrorPage(params) {
         <div className="App">
             <section className="container">
                 <Container>
-                    <h3>Error 404: Not Found</h3>
+                    <h2>Error 404: Not Found</h2>
                     <hr className="line" />
                     <Link className='bigBtn' to={"/"}>Regresar</Link>
                 </Container>

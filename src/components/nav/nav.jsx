@@ -33,11 +33,11 @@ export function Nav(){
     return(
         <nav>
             <ul className="navContainer">
-                <li><NavLink className={classValue.home} to={'/'} onClick={handlerClick}><ion-icon className="navIcon" name="home-outline"></ion-icon></NavLink></li>
-                <li><NavLink className={classValue.habilities} to={'/habilities'} onClick={handlerClick}><ion-icon className="navIcon" name="shapes-outline"></ion-icon></NavLink></li>
-                <li><NavLink className={classValue.projects} to={"/projects"} onClick={handlerClick}><ion-icon className="navIcon" name="flask-outline"></ion-icon></NavLink></li>
-                <li><NavLink className={classValue.education} to={"/education"} onClick={handlerClick}><ion-icon className="navIcon" name="school-outline"></ion-icon></NavLink></li>
-                <li><NavLink className={classValue.contact} to={"/contact"} onClick={handlerClick}><ion-icon className="navIcon" name="at-outline"></ion-icon></NavLink></li>
+                <li><NavLink className={`${classValue.home} bubbleHome`} to={'/'} onClick={handlerClick}><ion-icon className="navIcon" name="home-outline"></ion-icon></NavLink></li>
+                <li><NavLink className={`${classValue.habilities} bubbleHabilities`} to={'/habilities'} onClick={handlerClick}><ion-icon className="navIcon" name="shapes-outline"></ion-icon></NavLink></li>
+                <li><NavLink className={`${classValue.projects} bubbleProjects`} to={"/projects"} onClick={handlerClick}><ion-icon className="navIcon" name="flask-outline"></ion-icon></NavLink></li>
+                <li><NavLink className={`${classValue.education} bubbleEducation`} to={"/education"} onClick={handlerClick}><ion-icon className="navIcon" name="school-outline"></ion-icon></NavLink></li>
+                <li><NavLink className={`${classValue.contact} bubbleContact`} to={"/contact"} onClick={handlerClick}><ion-icon className="navIcon" name="at-outline"></ion-icon></NavLink></li>
             </ul>
         </nav>
     )

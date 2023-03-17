@@ -18,14 +18,7 @@
         
         opacity: 0;
     }
-    50%{
-        width: 10%;
-        height: 10%;
-        opacity: 0;
-    }
     100%{
-        width: 90%;
-        height: 90%;
         opacity: 100%;
     }
 }

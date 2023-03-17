@@ -61,6 +61,7 @@
         font-size: 2em;
         left: 0;
         transition: left .5s;
+        position: relative;
     }
     .navItem:focus{
         left: 1em;
@@ -68,10 +69,65 @@
         box-shadow: inset 5px 0 10px var(--black), inset -2px 0 10px var(--white), -10px 0 10px var(--black);
     }
     .navItemSelected{
+        position: relative;
         font-size: 2em;
         transition: left .5s;
         left: 1em;
         bottom: 0;
         box-shadow: inset 5px 0 10px var(--black), inset -2px 0 10px var(--white), -10px 0 10px var(--black);
-    }   
+    }
+    .bubbleHome:hover::after{
+        content: 'Home';
+        position: absolute;
+        left:3.5em;
+        font-size: 16px;
+        background-color: var(--black);
+        padding: 1px 5px;
+        border-radius: 5px;
+        animation: showBubble .5s ease
+    }
+    .bubbleHabilities:hover::after{
+        content: 'Habilities';
+        position: absolute;
+        left:3.5em;
+        font-size: 16px;
+        background-color: var(--black);
+        padding: 1px 5px;
+        border-radius: 5px;
+        animation: showBubble .5s ease
+    }
+    .bubbleProjects:hover::after{
+        content: 'Projects';
+        position: absolute;
+        left:3.5em;
+        font-size: 16px;
+        background-color: var(--black);
+        padding: 1px 5px;
+        border-radius: 5px;
+        animation: showBubble .5s ease
+    }
+    .bubbleEducation:hover::after{
+        content: 'Education';
+        position: absolute;
+        left:3.5em;
+        font-size: 16px;
+        background-color: var(--black);
+        padding: 1px 5px;
+        border-radius: 5px;
+        animation: showBubble .5s ease
+    }
+    .bubbleContact:hover::after{
+        content: 'Contact';
+        position: absolute;
+        left:3.5em;
+        font-size: 16px;
+        background-color: var(--black);
+        padding: 1px 5px;
+        border-radius: 5px;
+        animation: showBubble 1s ease
+    }
+    @keyframes showBubble{
+        0%{opacity: 0;}
+        100%{ opacity: 1;}
+    }
 }

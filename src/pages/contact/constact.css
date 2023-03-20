@@ -1,7 +1,8 @@
 .contactContainer{
-    height: 40%;
+    height: 50%;
     font-size: 1rem;
     padding-left: 1em;
+    text-align: center;
 }
 .contactContainer li{
     list-style: none;
@@ -29,9 +30,19 @@
 .contactMail::after{
     content: "gmail.com";
 }
+.downloadBtn{
+    text-decoration: none;
+    padding: .5em 1em;
+    font-weight: bold;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    color: var(--second-color);
+    display: inline-block;
+    margin-top: 1em;
+}
 .svgContainer{
     width: 100%;
-    height: 50%;
+    height: 40%;
     display: flex;
     justify-content: center;
 }
@@ -42,5 +53,8 @@
 @media (min-width: 1024px){
     .contactContainer{
         font-size: 1.5rem;
+    }
+    .downloadBtn{
+        padding: .5em 3em;
     }
 }

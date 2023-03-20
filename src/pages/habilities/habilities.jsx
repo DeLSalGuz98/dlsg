@@ -27,6 +27,7 @@ export function Habilities(){
                         <li>Autodidacta</li>
                         <li>Responsable</li>
                         <li>Organizado</li>
+                        <li>Disciplinado</li>
                     </ul>
                 </div>
                 <div className='habilitiesSubcontainer'>

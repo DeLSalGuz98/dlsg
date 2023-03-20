@@ -23,7 +23,7 @@ export function Home(){
                     </h1>
                     <hr className='line'/>
                     <p className='text'>
-                    Terminé la Universidad en enero de 2022, estudie Ingenieria de Sistemas e Informatica y entre todas las cosas que aprendí, lo que más me entusiasmó fue el desarrollo de software.
+                    Terminé la Universidad en enero de 2022, estudie Ingenieria de Sistemas e Informatica, me apasiona el mundo de la tecnologia y el desarrollo de software y siempre estoy dispuesto a aprender cosas nuevas.
                     </p>
                     <p className='text'>
                     Algunos de mis objetivos actuales son mejorar mis habilidades de programación, aprender a gestionar proyectos.

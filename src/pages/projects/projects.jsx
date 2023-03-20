@@ -4,52 +4,67 @@ import { Card } from '../../components/card/card'
 import { useState } from 'react'
 import store from '../../assets/img/projects/store.jpg'
 import weather from '../../assets/img/projects/weather-app.jpg'
-import school from '../../assets/img/projects/school.jpg'
+import news from '../../assets/img/projects/news.jpg'
 import clone from '../../assets/img/projects/web-clone.jpg'
+import homepage from '../../assets/img/projects/homepage.jpg'
 const projects = [
+    {
+        id:"2",
+        name: "Weather App - DevChallenge",
+        img: weather,
+        tools:['React JS', 'Node JS', 'CSS', 'Webpack'],
+        github: 'https://github.com/DeLSalGuz98/WeatherApp-devchallenges.io-',
+        site: 'https://weather-app-devchallenges-io-mu.vercel.app/' 
+    },
+    {
+        id:"3",
+        name: "Room Homepage - Fronend Mentor",
+        img: homepage,
+        tools:['HTML', 'CSS', 'JavaScript'],
+        github: 'https://github.com/DeLSalGuz98/Room-homepage-solution',
+        site: 'https://delsalguz98.github.io/Room-homepage-solution/'
+    },
+    {
+        id:"4",
+        name: "News Homepage - Fronend Mentor",
+        img: news,
+        tools:['HTML', 'CSS'],
+        github: 'https://github.com/DeLSalGuz98/newsHomepage',
+        site: 'https://zingy-pavlova-8bf224.netlify.app/' 
+    },
     {
         id:"1",
         name: "Aplicacion Web - Tienda Online",
         img: store,
         tools:['React JS', 'Node JS', 'CSS', 'MySQL'],
-        github: 'https://github.com/DeLSalGuz98/store-project' 
+        github: 'https://github.com/DeLSalGuz98/store-project',
+        site: 'null' 
     },
     {
-        id:"2",
-        name: "Aplicacion Web del Clima",
-        img: weather,
-        tools:['React JS', 'Node JS', 'CSS', 'Webpack'],
-        github: 'https://github.com/DeLSalGuz98/WeatherApp-devchallenges.io-' 
-    },
-    {
-        id:"3",
-        name: "Aplicacion Web - Escuela Online",
-        img: school,
-        tools:['HTML', 'CSS', 'JavaScript', 'JSON server'],
-        github: 'https://github.com/DeLSalGuz98/school-app' 
-    },
-    {
-        id:"4",
+        id:"5",
         name: "SPA - Copia de la pagina Dota 2",
         img: clone,
         tools:['HTML', 'CSS'],
-        github: 'https://github.com/DeLSalGuz98/page-clone' 
+        github: 'https://github.com/DeLSalGuz98/page-clone',
+        site: 'null' 
     },
 ]
 
 export function Projects() {
     const [projectSelected, setProjectSelected] = useState({
-        name: "Aplicacion Web - Tienda Online",
-        img: store,
-        tools:['React JS', 'Node JS', 'CSS', 'MySQL'],
-        github: 'https://github.com/DeLSalGuz98/store-project' 
+        name: "Weather App - DevChallenge",
+        img: weather,
+        tools:['React JS', 'Node JS', 'CSS', 'Webpack'],
+        github: 'https://github.com/DeLSalGuz98/WeatherApp-devchallenges.io-',
+        site: 'https://weather-app-devchallenges-io-mu.vercel.app/'  
     });
     const handlerClick = (project)=>{
         setProjectSelected({...projectSelected, 
             name: project.name,
             img: project.img,
             tools: project.tools,
-            github: project.github
+            github: project.github,
+            site: project.site
         })
     }
     return(
@@ -69,6 +84,10 @@ export function Projects() {
                                         <div className="cardDescription">
                                             <span className='cardTitle'>{p.name}</span>
                                             <a className="cardBtn" target={'_blank'} href={p.github}>Ver Github</a>
+                                            {
+                                                p.site !== 'null'? <a className="cardBtn" target={'_blank'} href={p.site}>Ver Web</a>:<></>
+                                            }
+                                            
                                         </div>
                                     </Card>
                                 </div>
@@ -90,6 +109,10 @@ export function Projects() {
                             }
                         </ul>
                         <a className='previewBtn' target={'_blank'} href={projectSelected.github}>Ver Github</a>
+                        {
+                            projectSelected.site !== 'null'? <a className='previewBtn' target={'_blank'} href={projectSelected.site}>Ver Web</a>: <></>
+                        }
+                        {/* <a className='previewBtn' target={'_blank'} href={projectSelected.site}>Ver Web</a> */}
                     </div>
                 </div>
             </div>

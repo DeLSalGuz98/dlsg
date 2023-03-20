@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo&family=Salsa&display=swap');
 :root{
     --main-color: #B7E556;
+    --main-color-dark: #9ac048;
     --second-color: #4b485e;
     --transparet-color: #474457cb;
     --third-color: #FFF478;

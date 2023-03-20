@@ -4,7 +4,7 @@ import { Card } from '../../components/card/card'
 import { useState } from 'react'
 import store from '../../assets/img/projects/store.jpg'
 import weather from '../../assets/img/projects/weather-app.jpg'
-import news from '../../assets/img/projects/news.jpg'
+import news from '../../assets/img/projects/News.jpg'
 import clone from '../../assets/img/projects/web-clone.jpg'
 import homepage from '../../assets/img/projects/homepage.jpg'
 const projects = [

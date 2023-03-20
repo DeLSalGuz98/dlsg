@@ -23,10 +23,10 @@ export function Home(){
                     </h1>
                     <hr className='line'/>
                     <p className='text'>
-                    Terminé la Universidad en enero de 2022, estudie Ingenieria de Sistemas e Informatica, me apasiona el mundo de la tecnologia y el desarrollo de software y siempre estoy dispuesto a aprender cosas nuevas.
+                    Terminé la Universidad en enero de 2022, estudie Ingenieria de Sistemas e Informatica, me apasiona el mundo de la tecnologia, el desarrollo de software y siempre estoy dispuesto a aprender cosas nuevas.
                     </p>
                     <p className='text'>
-                    Algunos de mis objetivos actuales son mejorar mis habilidades de programación, aprender a gestionar proyectos.
+                    Algunos de mis objetivos actuales son mejorar mis habilidades de programación y aprender a gestionar proyectos.
                     </p>
                     {/* <Link className='bigBtn' to={"/projects"}>Mis Proyectos</Link> */}
                     <input className='bigBtn' type="button" value="Mis Proyectos" onClick={handlerClick}/>

@@ -77,7 +77,7 @@
         box-shadow: inset 5px 0 10px var(--black), inset -2px 0 10px var(--white), -10px 0 10px var(--black);
     }
     .bubbleHome:hover::after{
-        content: 'Home';
+        content: 'Inicio';
         position: absolute;
         left:3.5em;
         font-size: 16px;
@@ -87,7 +87,7 @@
         animation: showBubble .5s ease
     }
     .bubbleHabilities:hover::after{
-        content: 'Habilities';
+        content: 'Habilidades';
         position: absolute;
         left:3.5em;
         font-size: 16px;
@@ -97,7 +97,7 @@
         animation: showBubble .5s ease
     }
     .bubbleProjects:hover::after{
-        content: 'Projects';
+        content: 'Proyectos';
         position: absolute;
         left:3.5em;
         font-size: 16px;
@@ -107,7 +107,7 @@
         animation: showBubble .5s ease
     }
     .bubbleEducation:hover::after{
-        content: 'Education';
+        content: 'Certificados';
         position: absolute;
         left:3.5em;
         font-size: 16px;
@@ -117,7 +117,7 @@
         animation: showBubble .5s ease
     }
     .bubbleContact:hover::after{
-        content: 'Contact';
+        content: 'Contacto';
         position: absolute;
         left:3.5em;
         font-size: 16px;

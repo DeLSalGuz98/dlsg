@@ -29,7 +29,7 @@ h2{
 @media (min-width: 700px) {
     .habilitiesContainer{
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 60% 40%;
         grid-template-rows: 50% 50%;
     }
     .habilitiesSubcontainer{
@@ -53,7 +53,7 @@ h2{
         font-size: 1.5em;
     }
     .imgTools{
-        width: 9em;
-        height: 9em;
+        width: 8em;
+        height: 8em;
     }
 }

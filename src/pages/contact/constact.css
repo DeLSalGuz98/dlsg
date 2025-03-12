@@ -20,6 +20,9 @@
     margin-left: 1em;
     display: block;
 }
+.contactText:hover{
+    text-decoration: underline;
+}
 .contactMail{
     color: var(--white);
     margin-left: 1em;
@@ -39,6 +42,9 @@
     color: var(--second-color);
     display: inline-block;
     margin-top: 1em;
+}
+.downloadBtn:hover{
+    background-color: var(--main-color-dark);
 }
 .svgContainer{
     width: 100%;

@@ -40,6 +40,10 @@
     font-weight: bold;
     font-size: 1em;
     padding: .5em 1em;
+    cursor: pointer;
+}
+.bigBtn:hover{
+    background-color: var(--main-color-dark);
 }
 @media (min-width:1024px ) {
     .cols-2{
